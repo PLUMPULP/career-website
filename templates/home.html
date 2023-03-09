@@ -16,17 +16,22 @@
   </head>
   <body>
     <div class="container">
-    <h1>BASIC</h1>
+    <h1>
+      {{company_name}}BASIC</h1>
     <img class="img-fluid" id="banner" src="https://career-website.akhils16.repl.co/static/banner.jpg"height="320px"></center>
    <h2>About This Site</h2>
 
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat nulla turpis, in molestie felis consequat id. Suspendisse tempus egestas eros, id condimentum justo luctus eu. Vivamus volutpat leo eu justo ornare pretium ut vitae risus. Duis eleifend magna non quam facilisis, ac ultrices est lacinia. Nullam quis nibh placerat odio blandit tincidunt sed sed arcu. Maecenas a risus vel lacus rhoncus malesuada. Sed in convallis eros, id consectetur arcu. Cras pharetra ante ante, id ultrices nulla gravida ac. Mauris eget euismod mi.
 
 Proin semper dapibus odio sit amet ornare. Vestibulum ac turpis sem. Nunc dapibus enim non nunc semper vulputate. Quisque ac elementum enim. Aenean augue sapien, mollis vitae quam et, sodales dictum ex. Donec pulvinar malesuada auctor. Etiam feugiat varius quam, sed vestibulum mauris dapibus sagittis. Nam non euismod ipsum. Sed aliquam purus in nisi ultricies, quis euismod arcu condimentum.</p>
-<h2>open positions</h2>
+<h2 class="border-bottom">open positions</h2>
       <div class="text-center">
   <button class="btn btn-outline-success" >contact us</button> 
-      
+      </div>
+        <div>
+          {% for job in jobs %}
+         {% include 'jobitem.html' %}
+            {% endfor %}
       </div >
       </div>
      
